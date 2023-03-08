@@ -1,6 +1,18 @@
-I like getting GitHub to work
-I like music
-I like pork pies
-I like crisps
-I like tea very much
-I like Radio 4
+I like juice very much
+I like coffee (but I can not drink too much as I can hardly fall asleep after drinking it)
+I don't like chocolate biscuits
+I like cakes
+I like winter
+I like snow
+<<<<<<< HEAD
+I like singing
+I like listening to music
+I like jogging
+=======
+I like jogging
+I like travelling
+I like dreaming
+I like eating
+I like swimming
+>>>>>>> Alex
+I like everything in my life
