@@ -1,0 +1,5 @@
+This is a file which records my reflection in IBI1 practical 4 on 2023/3/8
+During this practical, I have learnt version control, how to work with Git and how to make a website with GitHub pages.
+At first, I ran the practical on the ZJE server. However, because of issues with the server connecting to GitHub, I couldn't move my local changes back to GitHub.
+Finally, I did the practical again on my own computer with UoE VPN and it succeeded!
+I have learnt a lot from this practical and I am really happy to acquire knowledge!
