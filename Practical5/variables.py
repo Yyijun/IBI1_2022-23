@@ -4,3 +4,6 @@ c = 116.39
 d = a-b
 e = c-a
 print("the longitude distance that Rob travelled to Los Angeles=",d,"the longitude distance that Rob travelled to Haining=",e)
+#the longitude distance that Rob travelled to Los Angeles= 115.05 the longitude distance that Rob travelled to Haining= 119.58
+#Which of them is greater? e is greater. 
+#Did Rob travel further to Haining or Los Angeles? Rob travelled further to Haining.
