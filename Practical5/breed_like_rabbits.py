@@ -2,7 +2,7 @@
 n = 2
 #it is the first generation
 generation = 1
-#stop when having at least 100 rabbits
+#repeat
 while 1 == 1:
 #  the number of rabbits that will be born at this gneration
    born_rabbits_number = n
