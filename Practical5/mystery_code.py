@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: Draw a random integer between 1 and 100, and repeat for ten times. Print the maximum value obtained in these ten times.
+# Answer: This piece of code draws a random integer between 1 and 100 ten times and then prints the maximum value obtained in these ten times.
 
 # Import libraries
 # randint allows drawing a random number,
