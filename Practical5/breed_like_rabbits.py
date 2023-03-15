@@ -11,7 +11,7 @@ while 1 == 1:
 #  count the number of generations
    generation = generation+1
 #  if less than 100: keep breeding
-#  if at least 100: DONE
+#  if more than 100: DONE
    if n > 100:
       break
 #convert a number into a string
