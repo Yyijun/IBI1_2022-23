@@ -1,6 +1,6 @@
 #start with two rabbits
 n = 2
-#it is the first generation
+#define a variable to count the number of generations
 generation = 1
 #repeat
 while 1 == 1:
@@ -16,5 +16,4 @@ while 1 == 1:
       break
 #convert a number into a string
 generation_number = str(generation)
-#print the output
 print("At",generation_number,"th generation, over 100 rabbits have been born")
