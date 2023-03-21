@@ -14,4 +14,4 @@ plt.axis('equal')
 plt.show()
 
 movie_genre = 'Comedy' #the variable of the requested genre
-movie[movie_genre]
+print(movie[movie_genre])
