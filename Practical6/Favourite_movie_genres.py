@@ -4,11 +4,10 @@ print(movie)
 #import module
 import matplotlib.pyplot as plt
 #basic data for pie chart
-labels = 'Comedy', 'Action', 'Romance', 'Fantasy', 'Science-fiction', 'Horror', 'Crime', 'Documentary', 'History', 'War'
-sizes = [73, 42, 38, 28, 22, 19, 18, 12, 8, 7]
-explode = (0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)
+labels = list(movie.keys()) #list the keys in movie and name the list "labels" 
+sizes = list(movie.values()) #list the values in movie and name the list "sizes"
 #set some arguments ( to prevent labels from overlapping, put all lables outside the pie chart)
-plt.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%', pctdistance=1.1, labeldistance=1.3, shadow=False, startangle=90)
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', pctdistance=1.1, labeldistance=1.3, shadow=False, startangle=90)
 #equal aspect ratio
 plt.axis('equal')
 plt.show()
