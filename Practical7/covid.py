@@ -85,5 +85,23 @@ plt.title('New cases and new deaths worldwide')
 plt.xticks(world_date[0:len(world_date):4],rotation=-90) # Change the date interval to every four days and change the angle of x-axis to -90
 plt.show()
 
-# code to answer the question stated in file question.txt
+#code to answer the question stated in file question.txt
+#read out the data of date
+date_column = [True, False, False, False, False, False]
+date_data = covid_data.iloc[:,date_column]
 
+#create a list to store Boolean values
+need_row = [] 
+for i in date_data.date: #use loop to read dates
+    BV = i=="2020-03-31"
+    need_row.append(BV) #add elements
+
+#define a new dataframe which includes the data of total case numbers in different countries on 31 March 2020
+total_cases = covid_data.loc[need_row,["total_cases"]]
+
+#draw the boxplot and add some labels
+plt.boxplot(total_cases.total_cases, vert = True, whis = 1.5, patch_artist = True, meanline = False, showbox = True, showcaps = True, showfliers = True, notch = False) 
+plt.title('Total case in different countries on 31 March 2020')
+plt.ylabel('number')
+plt.xlabel('2020_03_31')
+plt.show()
