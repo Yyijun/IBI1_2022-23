@@ -46,9 +46,13 @@ print("mean_new_deaths=",mean_new_deaths)
 # Aim: create boxplot of new cases and new deaths on 31 March 2020
 # create the boxplot of new cases
 plt.boxplot(new_data.new_cases, vert = True, whis = 1.5, patch_artist = True, meanline = False, showbox = True, showcaps = True, showfliers = True, notch = False) 
+plt.title('New cases on 31 March 2020')
+plt.ylabel('number')
 plt.show()
 # create the boxplot of new deaths
 plt.boxplot(new_data.new_deaths, vert = True, whis = 1.5, patch_artist = True, meanline = False, showbox = True, showcaps = True, showfliers = True, notch = False) 
+plt.title('New deaths on 31 March 2020')
+plt.ylabel('number')
 plt.show()
 
 
@@ -80,3 +84,6 @@ plt.xlabel('date')
 plt.title('New cases and new deaths worldwide')
 plt.xticks(world_date[0:len(world_date):4],rotation=-90) # Change the date interval to every four days and change the angle of x-axis to -90
 plt.show()
+
+# code to answer the question stated in file question.txt
+
