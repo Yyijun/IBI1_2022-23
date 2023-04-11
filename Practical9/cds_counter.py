@@ -2,10 +2,9 @@
 #create a string variable to store the sequence
 seq = 'ATGCAATCGACTACGATCTGAGAGGGCCTAA'
 #firstly count the number of each individual stop codon
-#add them up
-#count the total number of possible coding sequences formed by the sequence
+#add them up and the result of the addition is the total number of possible coding sequences formed by the sequence
 TAA = seq.count('TAA')
 TAG = seq.count('TAG')
 TGA = seq.count('TGA')
-total_number = TAA + TAG + TGA
+total_number = TAA + TAG + TGA #the total number is the sum of the number of each individual stop codon
 print('The total number of possible coding sequences formed by the sequence is', total_number)
