@@ -14,7 +14,7 @@ for line in fa_file:
     line = line.strip() #put the entire sequence on one line
     if line.startswith('>'):
        if sequence.endswith(f'{stop_codon}'): #filter for required genes
-         count = count + 1
+         count = sequence.count(f'{stop_codon}')
          genes.write(f'>{gene_name} {count}\n{sequence}\n') #write down into the genes
        gene_name = re.findall(r'gene:(.+) gene_biotype:.+', line) #read out the gene name
        gene_name = ''.join(gene_name) #convert the list to string
