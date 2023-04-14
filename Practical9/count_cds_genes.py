@@ -9,7 +9,7 @@ genes = open(f'{stop_codon}_stop_genes.fa','w')
 #Stores the sequences of genes whose sequences end with the given stop codon in fasta form
 sequence = '' #create sequence to store sequences of required genes
 gene_name = '' #create gene_name to store the names of genes
-count = 0 #used to count the number of required coding sequences	
+count = 0 #used to count the number of stop codons	
 for line in fa_file:
     line = line.strip() #put the entire sequence on one line
     if line.startswith('>'):
