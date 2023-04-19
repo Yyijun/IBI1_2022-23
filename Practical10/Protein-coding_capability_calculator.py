@@ -14,7 +14,7 @@ def sequence(dna_seq):
       print("The sequence should be labelled as 'protein-coding'")
    if proportion < 10:
       print("The sequence should be labelled as 'non-coding'")
-   else:
+   elif proportion <= 50:
       print("The sequence should be labelled as 'unclear'")
 
 #an example of how the function should be called
