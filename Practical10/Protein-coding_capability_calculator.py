@@ -13,7 +13,7 @@ def sequence(dna_seq):
    return(proportion)
 
 #an example of how the function should be called 
-proportion=sequence("ATGAaATGA") #you can modify it by changing the content between
+proportion=sequence("ATGAaATGA")
 
 #print the results
 print("The percentage of this sequence which is coding is", proportion,"%")
