@@ -1,4 +1,5 @@
 #aim: write a new Python class that can be used to contain information about individual athletes and their recorded times for each of the three disciplines (swim, cycle, run)
+#please input all the time in second or minute
 #create a class called 'triathlon'
 class triathlon(object):
    def __init__(self, a, b, c, d, e):
