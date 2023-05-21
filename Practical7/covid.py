@@ -22,8 +22,8 @@ for i in location_data.location: #use loop to read locations
     Boolean = i=="Afghanistan"
     Afghanistan_row.append(Boolean) #add elements
 
-# use the Boolean to find exactly the rows I need in the dataframe
-covid_data.loc[Afghanistan_row,"total_cases"]
+# use the Boolean to find exactly the rows I need in the dataframe and print
+print(covid_data.loc[Afghanistan_row,"total_cases"])
 
 
 # Aim: computed the mean number of new cases and new deaths on 31 March 2020
@@ -75,15 +75,17 @@ for i in world_date:
     new_deaths_worldwide.append(np.sum(covid_data.loc[covid_data.loc[:,"date"] == i, "new_deaths"]))
 
 #plot the new cases worldwide over time with blue circles
-plt.plot(world_date, new_cases_worldwide, 'bo') #"bo" means: plot the points with small circles in blue
+plt.plot(world_date, new_cases_worldwide, 'bo', label='new cases') #"bo" means: plot the points with small circles in blue
 #plot the new deaths worldwide over time with red circles
-plt.plot(world_date, new_deaths_worldwide, 'ro') #"ro" means: plot the points with small circles in red
+plt.plot(world_date, new_deaths_worldwide, 'ro', label='new deaths') #"ro" means: plot the points with small circles in red
 #modify the plot 
 plt.ylabel('number')
 plt.xlabel('date')
 plt.title('New cases and new deaths worldwide')
+plt.legend(loc='upper left')
 plt.xticks(world_date[0:len(world_date):4],rotation=-90) # Change the date interval to every four days and change the angle of x-axis to -90
 plt.show()
+
 
 #code to answer the question stated in file question.txt
 #read out the data of date
