@@ -2,7 +2,7 @@ Question:
 How does the boxplot of total case numbers in different locations on 31 March 2020 look like? 
 
 The line number for where in my main python file the code to answer my question starts: 
-88
+90
 
 Discussion:
 The boxplot is a little bit different from what I expected. There is a value which is much bigger than others and this causes that the box becomes very flat. After observing the raw data, I find that there are rows whose data is summative. This summative data leads to the strange shape of the boxplot.
