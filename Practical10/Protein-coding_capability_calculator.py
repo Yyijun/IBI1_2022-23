@@ -6,16 +6,20 @@ def sequence(dna_seq):
    dna_seq=dna_seq.upper() #convert all the letters in the dna_seq into capital letters
    within_codons=re.findall(r'ATG(.*)TGA', dna_seq) #read out the bases between 'ATG' and 'TGA'
    within_codons="".join(within_codons) #convert the list into string
+   within_codons='ATG'+within_codons+'TGA'
    count=len(within_codons)
    total_count=len(dna_seq)
    proportion=count/total_count*100
-   print("The percentage of this sequence which is coding is", proportion,"%")
-   if proportion > 50:
-      print("The sequence should be labelled as 'protein-coding'")
-   if proportion < 10:
-      print("The sequence should be labelled as 'non-coding'")
-   elif proportion <= 50:
-      print("The sequence should be labelled as 'unclear'")
+   return(proportion)
 
-#an example of how the function should be called
-sequence("ATGAaATGA")
+#an example of how the function should be called 
+proportion=sequence("ATGAaATGA") #you can modify it by changing the content between
+
+#print the results
+print("The percentage of this sequence which is coding is", proportion,"%")
+if proportion > 50:
+   print("The sequence should be labelled as 'protein-coding'")
+if proportion < 10:
+   print("The sequence should be labelled as 'non-coding'")
+elif proportion <= 50:
+   print("The sequence should be labelled as 'unclear'")
