@@ -5,6 +5,8 @@ def buy_house(value, salary): # value is the total value of the house, salary is
         result = "No"
     else: #if the house worth no more than five times your annual salary
         result = "Yes"
-    print("Can you buy the hourse? ", result)
+    return result
 
-buy_house(90, 20) #an example of how this function should be called 
+#an example of how this function should be called 
+result = buy_house(90, 20) 
+print(result)
