@@ -9,7 +9,7 @@ covid_data = pd.read_csv("full_data.csv")
 
 
 # showing the second column from every 100th row from the first 1000 rows (inclusive)
-covid_data.iloc[0:1001:100,1]
+print(covid_data.iloc[0:1001:100,1])
 
 
 # Aim: used a Boolean to show “total cases” for all rows corresponding to Afghanistan
